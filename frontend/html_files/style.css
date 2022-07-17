@@ -1,0 +1,149 @@
+body{
+    background-color: #2C2C2C;
+}
+
+
+/************************* 
+LANDING HEADER
+***************************/
+
+
+.landingheader {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px white solid;
+}
+
+.landingheader .sign {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.landingheader .budgetbox {
+    margin:0;
+    display: flex;
+}
+
+.landingheader .budgetbox .B{
+    font-size: 200%;
+    border: #0269C1 solid 2px;
+    height: 69%;
+    margin: 4%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.landingheader .budgetbox .bx{
+    border: 0;
+    color: white;
+    background-color: white;
+    padding: 0;
+    margin: 2%;
+    height: 1%;
+    margin-top: 8%;
+}
+
+
+/*****************
+LANDING BODY
+*****************/
+
+
+.landingbody {
+    color: white;
+    width: 40% ;
+}
+
+.landingbody .notetext{
+    width: 100%;
+    margin-left: 6%;
+    margin-top: 9%;
+}
+
+.landingbody .SignUP{
+    font-size: 4vw;
+    width: 100%;
+}
+
+.landingbody .note{
+    font-size: 1.7vw;
+    width: 75%;
+    margin-top: 5%;
+}
+
+.landingbody .emailpw{
+    margin-left: 6%;
+    margin-top: 20%;
+    width: 40%;
+}
+
+.landingbody .password{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.landingbody .emailpw .email{
+    color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.landingbody .emailpw .epwinput{
+    background: #b1b1b194;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5%;
+    padding: 4%;
+    margin-bottom: 5%;
+}
+.landingbody .emailpw .input::placeholder {
+    color: white;
+    border: 0;
+    width: 100%;
+    opacity: 1;
+}
+.landingbody .emailpw .input{
+    background: transparent;
+    border: 0;
+    width: 100%;
+}
+.landingbody .emailpw .ep{
+    margin-left: 6%;
+}
+
+.landingbody .emailpw .registerbutton{
+    border: #707070 solid thin;
+    border-radius: 8px;
+    width: 44%;
+    padding: 3%;
+    background-color: #F7FAFA;
+}
+
+/********************
+** MAIN BODY GRAPHS 
+*********************/
+.main{
+    display: flex;
+}
+
+.main .graphs{
+    width: 60%;
+}
+
+.main .graphs .monthlyBudget{
+    width: 30%;
+    margin-top: 55%;
+    margin-left: -10%;
+    background: black;
+    color: white;
+    padding: 1%;
+    border-radius: 8px;
+}
