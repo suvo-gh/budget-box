@@ -127,9 +127,12 @@ LANDING BODY
     background-color: #F7FAFA;
 }
 
+
 /********************
 ** MAIN BODY GRAPHS 
 *********************/
+
+
 .main{
     display: flex;
 }
@@ -146,4 +149,153 @@ LANDING BODY
     color: white;
     padding: 1%;
     border-radius: 8px;
+}
+
+.main .graphs .monthlyBudget .outerBar{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.main .graphs .monthlyBudget .innerBar{
+    width: 40%;
+    background-color: #2AC926;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.main .graphs .incomeExpenseBar{
+    width: 60%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    margin-top: -60%;
+    margin-left: 8%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.main .graphs .incomeExpenseBar .heads{
+    width: 100%;
+    }
+
+.main .graphs .incomeExpenseBar .heading{
+    font-size: 1.5vw;
+    padding: 1%;
+    width: 100%;
+}
+
+.main .graphs .incomeExpenseBar .subheading{
+    font-size: 1.2vw;
+    padding: 1%;
+    width: 100%;
+}
+
+
+.main .graphs .incomeExpenseBar .legend{
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
+
+.main .graphs .incomeExpenseBar .legend .legendIncExp{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.main .graphs .incomeExpenseBar .legend .legendIncomeDot{
+    padding: 5%;
+    background-color: greenyellow;
+    width: 1%;
+    border-radius: 5px;
+    height: 1%;
+    margin-right: 20%;
+    margin-left: -90%;
+}
+
+.main .graphs .incomeExpenseBar .legend .legendExpenseDot{
+    padding: 5%;
+    background-color: red;
+    width: 1%;
+    border-radius: 5px;
+    height: 1%;
+    margin-right: 20%;
+    margin-left: -90%;
+}
+
+.main .graphs .incomeExpenseBar .bars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.main .graphs .incomeExpenseBar .bar1, .bar2, .bar3, .bar4{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.main .graphs .incomeExpenseBar .bar1 .expenseBar1{
+    background-color: #2AC926;
+    width: 2%;
+    padding: 10%;
+    border-radius: 3px;
+}
+.main .graphs .incomeExpenseBar .bar1 .incomeBar1{
+    padding: 4%;
+    border-radius: 3px;
+    background-color: red;
+    width: 2%;
+}
+
+.main .graphs .incomeExpenseBar .bar2 .expenseBar2{
+    padding: 4%;
+    border-radius: 3px;
+    background-color: #2AC926;
+    width: 2%;
+}
+.main .graphs .incomeExpenseBar .bar2 .incomeBar2{
+    padding: 4%;
+    border-radius: 3px;
+    background-color: red;
+    width: 2%;
+}
+
+.main .graphs .incomeExpenseBar .bar3 .expenseBar3{
+    padding: 4%;
+    border-radius: 3px;
+    background-color: #2AC926;
+    width: 2%;
+}
+.main .graphs .incomeExpenseBar .bar3 .incomeBar3{
+    padding: 4%;
+    border-radius: 3px;
+    background-color: red;
+    width: 2%;
+}
+
+.main .graphs .incomeExpenseBar .bar4 .expenseBar4{
+    padding: 4%;
+    border-radius: 3px;
+    background-color: #2AC926;
+    width: 2%;
+}
+.main .graphs .incomeExpenseBar .bar4 .incomeBar4{
+    padding: 4%;
+    border-radius: 3px;
+    background-color: red;
+    width: 2%;
+}
+
+
+.main .graphs .incomeExpenseBar .barLine{
+    height: 100%;
+    width: 100%;
 }
