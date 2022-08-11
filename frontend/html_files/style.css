@@ -228,17 +228,26 @@ LANDING BODY
     margin-left: -90%;
 }
 
-.main .graphs .incomeExpenseBar .bars{
+.main .graphs .incomeExpenseBar .bars {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: flex-start;
 }
 
+.main .graphs .incomeExpenseBar .dates {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 .main .graphs .incomeExpenseBar .bar1, .bar2, .bar3, .bar4{
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: end;
+    height: 16vw;
+    flex-direction: row-reverse;
 }
 
 
@@ -247,55 +256,101 @@ LANDING BODY
     width: 2%;
     padding: 10%;
     border-radius: 3px;
+    height: 40%;
 }
 .main .graphs .incomeExpenseBar .bar1 .incomeBar1{
-    padding: 4%;
     border-radius: 3px;
     background-color: red;
     width: 2%;
+    padding: 10%;
+    height: 40%;
 }
 
 .main .graphs .incomeExpenseBar .bar2 .expenseBar2{
-    padding: 4%;
     border-radius: 3px;
     background-color: #2AC926;
     width: 2%;
+    padding: 10%;
+    height: 60%;
 }
 .main .graphs .incomeExpenseBar .bar2 .incomeBar2{
-    padding: 4%;
     border-radius: 3px;
     background-color: red;
     width: 2%;
+    padding: 10%;
+    height: 50%;
 }
 
 .main .graphs .incomeExpenseBar .bar3 .expenseBar3{
-    padding: 4%;
     border-radius: 3px;
     background-color: #2AC926;
     width: 2%;
+    padding: 10%;
+    height: 70%;
 }
 .main .graphs .incomeExpenseBar .bar3 .incomeBar3{
     padding: 4%;
     border-radius: 3px;
     background-color: red;
     width: 2%;
+    padding: 10%;
+    height: 40%;
 }
 
 .main .graphs .incomeExpenseBar .bar4 .expenseBar4{
-    padding: 4%;
+    padding: 10%;
     border-radius: 3px;
     background-color: #2AC926;
     width: 2%;
+    height: 70%;
 }
 .main .graphs .incomeExpenseBar .bar4 .incomeBar4{
-    padding: 4%;
+    padding: 10%;
     border-radius: 3px;
     background-color: red;
     width: 2%;
+    height: 35%;
 }
 
 
 .main .graphs .incomeExpenseBar .barLine{
     height: 100%;
     width: 100%;
+}
+
+.main .graphs .ExpensesChart
+{
+    width: 40%;
+    background-color: black;
+    margin-left: 41%;
+    color: white;
+    /* display: flex; */
+}
+
+
+.main .graphs .ExpensesChart .pie{
+    border-radius: 50%;
+    width: 100%;
+    /* border: #0269C1 10px solid; */
+    aspect-ratio: 1;
+    background: conic-gradient(
+    #ff0000 80deg,
+    green 0 190deg,
+    blue 0 360deg
+  );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .graphs .ExpensesChart .pie .pieinner{
+    /* padding: 10%; */
+    width: 70%;
+    border-radius: 50%;
+    background: black;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
 }
