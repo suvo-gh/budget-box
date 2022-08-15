@@ -1,5 +1,6 @@
 body{
     background-color: #2C2C2C;
+    margin: 0%;
 }
 
 
@@ -18,7 +19,7 @@ LANDING HEADER
 }
 
 .landingheader .sign {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -75,20 +76,20 @@ LANDING BODY
     margin-top: 5%;
 }
 
-.landingbody .emailpw{
+ .emailpw{
     margin-left: 6%;
     margin-top: 20%;
     width: 40%;
 }
 
-.landingbody .password{
+ .password{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
 
-.landingbody .emailpw .email{
+  .email{
     color: #F7F7F7;
     display: flex;
     flex-direction: column;
@@ -96,7 +97,7 @@ LANDING BODY
     
 }
 
-.landingbody .emailpw .epwinput{
+  .epwinput{
     background: #b1b1b194;
     border-radius: 4px;
     width: 100%;
@@ -104,22 +105,23 @@ LANDING BODY
     padding: 4%;
     margin-bottom: 5%;
 }
-.landingbody .emailpw .input::placeholder {
+  .input::placeholder {
     color: white;
     border: 0;
     width: 100%;
     opacity: 1;
 }
-.landingbody .emailpw .input{
+  .input{
     background: transparent;
     border: 0;
     width: 100%;
 }
-.landingbody .emailpw .ep{
+ .ep{
     margin-left: 6%;
+    color: white;
 }
 
-.landingbody .emailpw .registerbutton{
+  .registerbutton{
     border: #707070 solid thin;
     border-radius: 8px;
     width: 44%;
@@ -139,16 +141,27 @@ LANDING BODY
 
 .main .graphs{
     width: 60%;
+    margin-top: -10%;
 }
 
 .main .graphs .monthlyBudget{
-    width: 30%;
+    width: 41%;
     margin-top: 55%;
-    margin-left: -10%;
-    background: black;
+    margin-left: -12%;
+    background: #212121;
     color: white;
     padding: 1%;
     border-radius: 8px;
+    box-shadow: 1vw -1vw 97px 28px black;
+    font-size: 1.6vw;
+}
+
+.main .graphs .monthlyBudget div{
+    margin: 3%;
+}
+
+.main .graphs .monthlyBudget .calculation{
+    font-size: 1.3vw;
 }
 
 .main .graphs .monthlyBudget .outerBar{
@@ -165,18 +178,19 @@ LANDING BODY
 }
 
 .main .graphs .incomeExpenseBar{
-    width: 60%;
-    background-color: black;
+    width: 70%;
+    background-color: #212121;
     color: white;
     border-radius: 8px;
     margin-top: -60%;
-    margin-left: 8%;
+    margin-left: 10%;
     padding: 2%;
     display: flex;
     flex-direction: column;
+    box-shadow: -1vw 0.5vw 30px black;
+    position: relative;
+    z-index: -1;
 }
-
-
 
 
 .main .graphs .incomeExpenseBar .heads{
@@ -238,7 +252,7 @@ LANDING BODY
 .main .graphs .incomeExpenseBar .dates {
     display: flex;
     justify-content: space-around;
-
+    font-size: 1.2vw;
 }
 
 .main .graphs .incomeExpenseBar .bar1, .bar2, .bar3, .bar4{
@@ -320,23 +334,45 @@ LANDING BODY
 
 .main .graphs .ExpensesChart
 {
-    width: 40%;
-    background-color: black;
-    margin-left: 41%;
+    width: 50%;
+    background-color: #212121;
+    margin-left: 42%;
     color: white;
-    /* display: flex; */
+    display: flex;
+    border-radius: 6px;
+    box-shadow: -1vw -0.5vw 50px 10px black;
+    margin-top: -20%;
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:2% ;
+}
+
+.main .graphs .ExpensesChart .expenses
+{
+    font-size: 3vw;
+    width: 100%;
+    position: absolute;
+    margin-left: 10%;
 }
 
 
 .main .graphs .ExpensesChart .pie{
+    margin-top: 20%;
     border-radius: 50%;
-    width: 100%;
-    /* border: #0269C1 10px solid; */
+    width: 52%;
     aspect-ratio: 1;
     background: conic-gradient(
-    #ff0000 80deg,
-    green 0 190deg,
-    blue 0 360deg
+            purple 124deg,
+            orange 0 186deg,
+            grey 0 211deg,
+            White 0 268deg,
+            yellow 0 326deg,
+            cyan 0 360deg,
+            green 0 190deg,
+            blue 0 360deg
+          
   );
     display: flex;
     align-items: center;
@@ -352,5 +388,145 @@ LANDING BODY
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 3vw;
 }
+
+.main .graphs .ExpensesChart .legend{
+    margin-top: 16%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+}
+
+
+.main .graphs .ExpensesChart .legend .legendcat{
+    padding: 5%;
+    background-color: greenyellow;
+    width: 1%;
+    border-radius: 50%;
+    height: 1%;
+    margin-right: 10%;
+}
+
+.main .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.main .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.main .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main .graphs .ExpensesChart .legend .legendHouse{
+    background-color: purple;   
+}
+.main .graphs .ExpensesChart .legend .legendTransportation{
+    background-color: yellow;
+}
+.main .graphs .ExpensesChart .legend .legendGrocery{
+    background-color: orange;
+}
+.main .graphs .ExpensesChart .legend .legendElectricity{
+    background-color: white;
+}
+.main .graphs .ExpensesChart .legend .legendInternet{
+    background-color: cyan;
+}
+.main .graphs .ExpensesChart .legend .legendGym{
+    background-color: grey;
+}
+
+
+
+
+/***************
+***Sign In Email and pwd
+****************/
+
+/* .signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.signin_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, 30%);
+    width: 25%;
+    margin: auto;
+    color: white;
+}
+
+.signin_body .head1{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.signin_body .sub1{
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+.signinep{
+    width: 70%;
+    background-color: rgb(47, 47, 47);
+    padding: 5% 15%;
+    box-shadow: 0vw 0vw 50px 0.1vw black ;
+    border-radius: 10px;
+}
+
+.signinep .epwinput{
+    width: 90%;
+}
+
+.signin_body .password .registerbutton{
+    margin: auto;
+    margin-top: 5%;
+}
+
+/*************
+***Sidebar****
+**************/
+
+.sidebar{
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #2C2C2C;
+}
+
+.transactionroot{
+    background-color: black;
+    display: flex;
+    min-height: 100vh;
+}
+
