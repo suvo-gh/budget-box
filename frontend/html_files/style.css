@@ -1,6 +1,7 @@
 body{
     background-color: #2C2C2C;
     margin: 0%;
+    padding: 0%;
 }
 
 
@@ -18,10 +19,11 @@ LANDING HEADER
     border-bottom: 2px white solid;
 }
 
-.landingheader .sign {
+.landingheader .username {
     width: 20%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 .landingheader .budgetbox {
@@ -47,6 +49,14 @@ LANDING HEADER
     height: 1%;
     margin-top: 8%;
 }
+
+.landingheader .sign{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 
 /*****************
@@ -457,18 +467,9 @@ LANDING BODY
 }
 
 
-
-
 /***************
 ***Sign In Email and pwd
 ****************/
-
-/* .signin{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
 
 .signin_body{
     display: flex;
@@ -515,6 +516,14 @@ LANDING BODY
 ***Sidebar****
 **************/
 
+
+
+
+.transactionroot{
+    background-color: black;
+    display: flex;
+    min-height: 100vh;
+}
 .sidebar{
     color: white;
     font-size: 2vw;
@@ -522,11 +531,144 @@ LANDING BODY
     flex-direction: column;
     width: 20%;
     background-color: #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
 }
 
-.transactionroot{
-    background-color: black;
+.sidebar table{
+    margin-left: 5%;
+}
+
+.sidebar .dashboard img{
+   margin-left: 5%;
+}
+
+.sidebar .sidebarAnimation{
+    transform: scale(1);
+    opacity: 50%;
+    transition: transform 0.2s;
+}
+
+.sidebar .sidebarAnimation:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.sidebar .transactionbg{
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+/*********************
+*****Transaction List
+**********************/
+
+
+.transactionroot .transactionSection{
+    color: white;
+    width: 70%;
     display: flex;
-    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8%;
+    margin-left: 3%;
+}
+
+.transactionroot .transactionSection .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    width: 86%;
+    margin-left: 7%;
+}
+
+.transactionroot .transactionSection .top button{
+    font-size: 1.8vw;
+    height: 38%;
+    width: 12%;
+    border-radius: 5px;
+}
+
+.transactionroot .transactionSection table{
+    width: 88%;
+    text-align: center;
+    font-size: 1.4vw;
+    background-color: #363535;
+    margin-left: 7%;
+    border-radius: 8px;
+    height: 50%;
+    border-collapse: collapse;
+}
+
+
+.transactionroot .transactionSection table .tr{
+    border-top: 2px solid white;
+}
+
+.transactionroot .transactionSection table th{
+    font-size: 1.6vw;
+}
+
+.transactionroot .transactionSection table .income{
+    color: rgb(67, 208, 67);
+}
+
+.transactionroot .transactionSection table .expense{
+    color: red;
+}
+
+/**********************
+****** ADD TRANSACTION
+***********************/
+
+
+.addTransactionbg{
+    position: absolute;
+    background-color: black;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+}
+
+.addTransaction{
+    color: white;
+    z-index: 3;
+    background-color: #363535;
+    top: 0;
+    margin-top: 15%;
+    box-shadow: 1px 1px 10px #363535;
+    position: absolute;
+    width: 30%;
+    margin-left: 36%;
+    padding: 5%;
+    font-size: 1.2vw;
+}
+
+.addTransaction input{
+    padding: 3%;
+    margin: 2%;
+    margin-left: 0%;
+    font-size: 1.2vw;
+}
+
+.addTransaction select{
+    padding: 3%;
+    margin: 2%;
+    margin-left: 0%;
+    width: 50%;
+    font-size: 1.2vw;
+}
+
+.addTransaction button{
+    padding: 10%;
+    height: 6%;
 }
 

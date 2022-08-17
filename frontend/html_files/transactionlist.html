@@ -8,9 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- HEADER -->
         <div class = "landingheader" id = "header">
-            <!-- HEADER -->
             <div class = "budgetbox">
                 <div class="B">B</div>
                 <div class="minusB">
@@ -19,28 +18,147 @@
                     <span class="Box">ox</span>
                 </div>
             </div>
-            <div class = "sign">
+            <div class="username" >
                 User
             </div>
         </div>
+
+        <!-- Sidebar -->
         <section class="transactionroot">
             <aside class="sidebar">
-                <div>
-                    <img src="../img/dashboard_white_48dp.png"/>
-                    Dashboard
-                </div>
-                <div>
+                <table>
+                <tr class = "sidebarAnimation">
+                    <td class = "icon dashboard">
+                        <img src="../img/dashboard_white_48dp.png"/>
+                    </td>
+                    <td>
+                        <p>Dashboard</p>
+                    </td>
+                </tr>
+                <tr class = "sidebarAnimation transactionbg">
+                <td class = "icon">
                     <img src="../img/list_alt_white_48dp.png"/>
-                    Transaction list
-                </div>
-                <div>
-                    <img src="../img/account_circle_white_48dp (1).png"/>
-                    My Account
-                </div>
+                </td>
+                    <td>
+                        <p>Transaction list</p>
+                    </td>
+                </tr>
+                <tr class = "sidebarAnimation">
+                    <td class = "icon">
+                        <img src="../img/account_circle_white_48dp (1).png"/>
+                    </td>
+                    <td>
+                        <p>My Account</p>
+                    </td>
+                </tr>
+                </table>
             </aside>
-            <div>
-                
+
+            <!-- Transaction List -->
+            <div class = "transactionSection">
+                <div class="top">
+                    <h1>Transaction list</h1>
+                    <button>Add</button>
+                </div>
+                <table>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <tr class="tr">
+                        <td>2021/Oct/5</td>
+                        <td>Salary</td>
+                        <td>Salary</td>
+                        <td class="income">+$20000</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>2021/Oct/5</td>
+                        <td>Salary</td>
+                        <td>Salary</td>
+                        <td class="expense">-$500</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>2021/Oct/5</td>
+                        <td>Salary</td>
+                        <td>Salary</td>
+                        <td class="expense">-$300</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>2021/Oct/5</td>
+                        <td>Salary</td>
+                        <td>Salary</td>
+                        <td class="expense">-$100</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>2021/Oct/5</td>
+                        <td>Salary</td>
+                        <td>Salary</td>
+                        <td class="expense">-$150</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>2021/Oct/5</td>
+                        <td>Salary</td>
+                        <td>Salary</td>
+                        <td class="expense">-$10000</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>2021/Oct/5</td>
+                        <td>Salary</td>
+                        <td>Salary</td>
+                        <td class="income">+$10000</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>2021/Oct/5</td>
+                        <td>Salary</td>
+                        <td>Salary</td>
+                        <td class="income">+$10000</td>
+                    </tr>
+                </table>
             </div>
         </section>
+
+        <div class="addTransactionbg"></div>
+        <div class="addTransaction">
+            <select class = "select">
+                <option>
+                    Income or Expense
+                </option>
+                <option>
+                    Income
+                </option>
+                <option>
+                    Expense
+                </option>
+            </select><br/>
+            <select class = "sleect">
+                <option>
+                    Budget Category
+                </option>    
+                <option>
+                    A
+                </option>
+                <option>
+                    B
+                </option>
+                <option>
+                    C
+                </option>
+                <option>
+                    D
+                </option>
+            </select><br/>
+            <label>Name</label><br/>
+            <input placeholder="Name"/><br/>
+            
+            <tr>
+                <td><label>Cost</label></td>
+                <td></td><label>Date</label></td>
+            </tr>
+            <tr>
+                <td><input placeholder="Type your Cost"/></td>
+                <td><input placeholder="Type your Date" type="date"/><br/></td>
+            </tr>
+            <Button>Create</Button>
+        </div>
 </body>
 </html>
