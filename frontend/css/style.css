@@ -632,7 +632,7 @@ LANDING BODY
     background-color: black;
     z-index: 2;
     width: 100%;
-    height: 100%;
+    height: 110%; 
     top: 0;
     left: 0;
     opacity: 80%;
@@ -643,20 +643,24 @@ LANDING BODY
     z-index: 3;
     background-color: #363535;
     top: 0;
-    margin-top: 15%;
+    margin-top: 10%;
     box-shadow: 1px 1px 10px #363535;
     position: absolute;
     width: 30%;
     margin-left: 36%;
     padding: 5%;
     font-size: 1.2vw;
+    border-radius: 8px;
 }
 
 .addTransaction input{
     padding: 3%;
     margin: 2%;
     margin-left: 0%;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    border-radius: 8px;
+    width: 90%;
+    border: 0px;
 }
 
 .addTransaction select{
@@ -665,10 +669,470 @@ LANDING BODY
     margin-left: 0%;
     width: 50%;
     font-size: 1.2vw;
+    border-radius: 8px;
 }
 
 .addTransaction button{
-    padding: 10%;
-    height: 6%;
+    padding: 2%;
+    width: 25%;
+    font-size: larger;
+    border-radius: 8px;
+    border: 0px;
 }
 
+.addTransaction #name{
+    padding: 4%;
+    width: 38%;
+}
+
+.addTransaction table {
+    margin-bottom: 8%;
+    width: 100%;
+}
+
+.addTransaction table tr{
+    width: 100%;
+}
+
+.addTransaction table tr td
+{
+    width: 50%;
+}
+
+.addTransaction #cost{
+    padding: 8%;
+    width: 75%;
+}
+
+.addTransaction #date{
+    padding: 8%;
+    width: 75%;
+}
+
+
+/********************
+***PROFILE DETAILS 
+**********************/
+
+.profileDetails{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.profileDetails .profilePic{
+    border: 2px solid gray;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 10%;
+    margin-bottom: 2%;
+}
+
+.profileDetails .profilePicText{
+    font-size: 1.5vw;
+    margin-bottom: 5%;
+}
+
+.profileDetails .inputFields{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.profileDetails .inputFields label{
+    margin-left: 2%;
+    margin: 0% 3%;
+    font-size: 1.2vw;
+}
+
+.profileDetails .inputFields input{
+    /* margin-left: 2%; */
+    margin: 5% 0%;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+/****************
+****DASHBOARD
+*****************/
+
+/* EMPTY */
+.dashboardSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.dashboardSection .dashboardText{
+    font-size: 2.5vw;
+    margin: 2%;
+}
+
+.dashboardSection .intro{
+    font-size: 2.5vw;
+    font-weight:lighter;
+    margin: 2%;
+    text-align: center;
+}
+
+.dashboardSection button{
+    padding: 1%;
+    width: 25%;
+    font-size: larger;
+    border-radius: 8px;
+    border: 0px;
+    margin-top: 2%;
+}
+
+/* With DATA */
+
+.graphSection{
+    display: flex;
+    z-index: 2;
+    width: 100%;
+}
+
+.graphSection .graphs{
+    width: 100%;
+    margin-top: -10%;
+}
+
+.graphSection .graphs .monthlyBudget{
+    width: 34%;
+    margin-top: 18%;
+    margin-left: 61%;
+    background: #212121;
+    color: white;
+    padding: 2%;
+    border-radius: 8px;
+    box-shadow: 1vw -1vw 97px 28px black;
+    font-size: 1.6vw;
+}
+
+.graphSection .graphs .monthlyBudget div{
+    margin: 3%;
+}
+
+.graphSection .graphs .monthlyBudget .calculation{
+    font-size: 1.3vw;
+}
+
+.graphSection .graphs .monthlyBudget .outerBar{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.graphSection .graphs .monthlyBudget .innerBar{
+    width: 40%;
+    background-color: #2AC926;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.graphSection .graphs .incomeExpenseBar{
+    width: 50%;
+    background-color: #212121;
+    color: white;
+    border-radius: 8px;
+    margin-top: -23%;
+    margin-left: 6%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1vw 0.5vw 30px black;
+    position: relative;
+    z-index: -1;
+    height: 39vw;
+}
+
+
+.graphSection .graphs .incomeExpenseBar .heads{
+    width: 100%;
+    }
+
+.graphSection .graphs .incomeExpenseBar .heading{
+    font-size: 1.5vw;
+    padding: 1%;
+    width: 100%;
+}
+
+.graphSection .graphs .incomeExpenseBar .subheading{
+    font-size: 1.2vw;
+    padding: 1%;
+    width: 100%;
+}
+
+
+.graphSection .graphs .incomeExpenseBar .legend{
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
+
+.graphSection .graphs .incomeExpenseBar .legend .legendIncExp{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.graphSection .graphs .incomeExpenseBar .legend .legendIncomeDot{
+    padding: 5%;
+    background-color: greenyellow;
+    width: 1%;
+    border-radius: 5px;
+    height: 1%;
+    margin-right: 20%;
+    margin-left: -90%;
+}
+
+.graphSection .graphs .incomeExpenseBar .legend .legendExpenseDot{
+    padding: 5%;
+    background-color: red;
+    width: 1%;
+    border-radius: 5px;
+    height: 1%;
+    margin-right: 20%;
+    margin-left: -90%;
+}
+
+.graphSection .graphs .incomeExpenseBar .bars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.graphSection .graphs .incomeExpenseBar .dates {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2vw;
+}
+
+.graphSection .graphs .incomeExpenseBar .exbar{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+    border-radius: 3px;
+    width: 100%;
+    padding: 0%;
+    padding-bottom: 0%;
+    
+}
+
+.graphSection .graphs .incomeExpenseBar .bar1, .bar2, .bar3, .bar4{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    flex-direction: row-reverse;
+    padding: 5%;
+    padding-bottom: 0%;
+
+}
+
+.graphSection .graphs .incomeExpenseBar .bar1 .expenseBar1{
+    background-color: #2AC926;
+    width: 100%;
+    padding: 10%;
+    border-radius: 3px;
+    height: 40%;
+}
+.graphSection .graphs .incomeExpenseBar .bar1 .incomeBar1{
+    border-radius: 3px;
+    background-color: red;
+    width: 100%;
+    padding: 10%;
+    height: 40%;
+}
+
+.graphSection .graphs .incomeExpenseBar .bar2 .expenseBar2{
+    border-radius: 3px;
+    background-color: #2AC926;
+    width: 100%;
+    padding: 10%;
+    height: 60%;
+}
+.graphSection .graphs .incomeExpenseBar .bar2 .incomeBar2{
+    border-radius: 3px;
+    background-color: red;
+    width: 100%;
+    padding: 10%;
+    height: 50%;
+}
+
+.graphSection .graphs .incomeExpenseBar .bar3 .expenseBar3{
+    border-radius: 3px;
+    background-color: #2AC926;
+    width: 100%;
+    padding: 10%;
+    height: 70%;
+}
+.graphSection .graphs .incomeExpenseBar .bar3 .incomeBar3{
+    padding: 4%;
+    border-radius: 3px;
+    background-color: red;
+    width: 100%;
+    padding: 10%;
+    height: 40%;
+}
+
+.graphSection .graphs .incomeExpenseBar .bar4 .expenseBar4{
+    padding: 10%;
+    border-radius: 3px;
+    background-color: #2AC926;
+    width: 100%;
+    height: 70%;
+}
+.graphSection .graphs .incomeExpenseBar .bar4 .incomeBar4{
+    padding: 10%;
+    border-radius: 3px;
+    background-color: red;
+    width: 100%;
+    height: 35%;
+}
+
+.graphSection .graphs .incomeExpenseBar .barLine{
+    /* height: 100%; */
+    width: 100%;
+}
+
+.graphSection .graphs .ExpensesChart
+{
+    width: 32%;
+    background-color: #212121;
+    margin-left: 62%;
+    color: white;
+    display: flex;
+    border-radius: 6px;
+    box-shadow: -1vw -0.5vw 50px 10px black;
+    margin-top: -25%;
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    height: 18vw;
+}
+
+.graphSection .graphs .ExpensesChart .expenses
+{
+    font-size: 3vw;
+    width: 100%;
+    position: absolute;
+    margin-left: 10%;
+}
+
+
+.graphSection .graphs .ExpensesChart .pie{
+    margin-top: 17%;
+    border-radius: 50%;
+    width: 52%;
+    aspect-ratio: 1;
+    background: conic-gradient(
+            purple 124deg,
+            orange 0 186deg,
+            grey 0 211deg,
+            White 0 268deg,
+            yellow 0 326deg,
+            cyan 0 360deg,
+            green 0 190deg,
+            blue 0 360deg
+          
+  );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphSection .graphs .ExpensesChart .pie .pieinner{
+    /* padding: 10%; */
+    width: 70%;
+    border-radius: 50%;
+    background: black;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+}
+
+.graphSection .graphs .ExpensesChart .legend{
+    margin-top: 16%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+}
+
+
+.graphSection .graphs .ExpensesChart .legend .legendcat{
+    padding: 5%;
+    background-color: greenyellow;
+    width: 1%;
+    border-radius: 50%;
+    height: 1%;
+    margin-right: 10%;
+}
+
+.graphSection .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.graphSection .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.graphSection .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.graphSection .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.graphSection .graphs .ExpensesChart .legend .legend1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.graphSection .graphs .ExpensesChart .legend .legendHouse{
+    background-color: purple;   
+}
+.graphSection .graphs .ExpensesChart .legend .legendTransportation{
+    background-color: yellow;
+}
+.graphSection .graphs .ExpensesChart .legend .legendGrocery{
+    background-color: orange;
+}
+.graphSection .graphs .ExpensesChart .legend .legendElectricity{
+    background-color: white;
+}
+.graphSection .graphs .ExpensesChart .legend .legendInternet{
+    background-color: cyan;
+}
+.graphSection .graphs .ExpensesChart .legend .legendGym{
+    background-color: grey;
+}

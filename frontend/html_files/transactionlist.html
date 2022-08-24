@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -117,6 +117,7 @@
             </div>
         </section>
 
+        <!-- Add Transaction -->
         <div class="addTransactionbg"></div>
         <div class="addTransaction">
             <select class = "select">
@@ -130,7 +131,7 @@
                     Expense
                 </option>
             </select><br/>
-            <select class = "sleect">
+            <select class = "select">
                 <option>
                     Budget Category
                 </option>    
@@ -148,16 +149,17 @@
                 </option>
             </select><br/>
             <label>Name</label><br/>
-            <input placeholder="Name"/><br/>
-            
+            <input placeholder="Name" id="name"/><br/>
+            <table class="tableadd">
             <tr>
                 <td><label>Cost</label></td>
-                <td></td><label>Date</label></td>
+                <td><label>Date</label></td>
             </tr>
             <tr>
-                <td><input placeholder="Type your Cost"/></td>
-                <td><input placeholder="Type your Date" type="date"/><br/></td>
+                <td><input id="cost" placeholder="Type your Cost"/></td>
+                <td><input id="date" placeholder="Type your Date" type="date"/><br/></td>
             </tr>
+            </table>
             <Button>Create</Button>
         </div>
 </body>
